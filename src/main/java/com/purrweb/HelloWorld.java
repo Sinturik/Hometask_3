@@ -1,23 +1,23 @@
 package com.purrweb;
 
-import java.sql.SQLOutput;
-
 public class HelloWorld {
 
     public static void main(String[] args) {
         //создание объектов класса Cats
-        Cats Murzik = new Cats();
-        Cats Barsik = new Cats();
+        Cat Murzik = new Cat("Murzik");
+        Murzik.color = "black";
+        Murzik.age = 1;
+        Cat Barsik = new Cat("Barsik");
+        Barsik.color = "gray";
+        Barsik.age = 3;
 
         //вызов метода grow
         Barsik.grow();
-        System.out.println(Murzik.age+ Barsik.age);
+        System.out.println(Murzik.age + Barsik.age);
 
         //создание объектов класса Films
-        Films GreenMile = new Films(120);
-        Films Titanic = new Films(150);
-
-
+        Film GreenMile = new Film(120);
+        Film Titanic = new Film(150);
 
         //вызов метода say, передача значения переменной sound
         Murzik.say("MEW");
@@ -32,14 +32,14 @@ public class HelloWorld {
         //вызов метода printDuration для Titanic
         Titanic.printDuration();
 
+        //вызов метода run для Murzik
+        Murzik.run();
 
-
-
-
-
-
-
-
-
+        //проверка вывода значения переменных
+        System.out.println("Цвет " + Murzik.name + ": " + Murzik.color);
+        System.out.println("Возраст " + Murzik.name + ": " + Murzik.age);
+        System.out.println("Цвет " + Barsik.name + ": " + Barsik.color);
+        System.out.println("Возраст " + Barsik.name + ": " + Barsik.age);
+        System.out.println("У " + Murzik.name + " и " + Barsik.name + " " + Murzik.paws + " лапы");
     }
 }

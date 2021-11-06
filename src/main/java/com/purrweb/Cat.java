@@ -10,17 +10,17 @@ public class Cat {
         this.name = name;
     }
 
-    //метод вырасти на 1 год
+    //метод "вырасти на 1 год"
     public void grow() {
         age = age + 1;
     }
 
-    //метод изменить цвет
+    //метод "бежать"
     public void run() {
         System.out.println(this.name + " побежал!");
     }
 
-    //метод говорить
+    //метод "говорить"
     public void say(String sound) {
         System.out.println(sound + "!");
     }

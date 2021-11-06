@@ -9,10 +9,12 @@ public class Film {
         this.duration = duration;
     }
 
+    //метод "показать фильм"
     public void showFilm(int N) {
         System.out.println("показан " + N + " раз");
     }
 
+    //метод "отобразить длительность фильма"
     public void printDuration() {
         System.out.println("Длительность фильма " + this.duration + " мин");
     }
